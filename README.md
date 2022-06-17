@@ -62,15 +62,15 @@ npm install -g yarn
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 
-7. At this point you can open vim, you might see some errors because the .vimrc file has some settings that has not been configured yet, to do so run this
+7. At this point you can open vim, you might see some errors because the .vimrc file has some settings that has not been configured yet. To fix this run
 
 ```
 :PlugInstall
 ```
 
-8. After this, you should have everything setup.
+After this, you should have everything setup.
 
-That's it! Enjoy my configuration :D
+Enjoy my configuration :D
 
 Made by Jpokan
 
