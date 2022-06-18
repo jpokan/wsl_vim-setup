@@ -44,6 +44,9 @@ Plug 'tpope/vim-markdown'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 
+" Lightweight wiki for Vim
+Plug 'lervag/wiki.vim'
+
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
@@ -53,6 +56,11 @@ let g:nord_bold_vertical_split_line = 1
 " Italics and syntax enabled for nord theme
 let g:nord_italic = 1
 syntax enable
+
+" Settings for vimwiki
+let g:wiki_root = '~/notes'
+let g:wiki_filetypes = ['md']
+let g:wiki_link_extension = '.md'
 
 " Initiate nvim with file tree open
 autocmd VimEnter * NERDTree | wincmd p
