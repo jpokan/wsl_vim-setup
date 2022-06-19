@@ -24,6 +24,7 @@ Open the windows terminal, make sure you're using the Ubuntu-22.04 profile.
 Copy these files and folders into the home directory
 
 ```
+.vim/
 .config/
 .bashrc
 .vimrc
@@ -62,13 +63,13 @@ npm install -g yarn
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 
-7. At this point you can open vim, you might see some errors because the .vimrc file has some settings that has not been configured yet. To fix this run
+7. At this point you can open vim, you might see some errors because the .vimrc file has has not been configured yet. To fix this run
 
 ```
 :PlugInstall
 ```
 
-After this, you should have everything setup.
+8. After this, you should have everything setup. Restart Vim!.
 
 Enjoy my configuration :D
 
