@@ -70,6 +70,13 @@ let g:wiki_root = '~/notes'
 let g:wiki_filetypes = ['md']
 let g:wiki_link_extension = '.md'
 
+" Customize markdown link functionality for tpope/vim-markdown plugin
+autocmd Filetype markdown,liquid,text
+	\ syn region markdownLink matchgroup=markdownLinkDelimiter
+	\ start="(" end=")" keepend contained conceal contains=markdownUrl
+autocmd Filetype markdown,liquid,text
+	\ syn match markdownExt /{[.:#][^}]*}/ conceal contains=ALL
+
 " Initiate nvim with file tree open
 autocmd VimEnter * NERDTree | wincmd p
 
