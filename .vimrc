@@ -17,6 +17,12 @@ set wildmenu
 let &t_SI = "\e[5 q"
 let &t_EI = "\e[2 q"
 
+" Set autosave when editing different files
+set autowrite
+
+" Enable backup files
+set backup
+
 " Plugins will be downloaded under the specified directory.
 call plug#begin()
 
@@ -55,6 +61,8 @@ let g:nord_bold_vertical_split_line = 1
 
 " Italics and syntax enabled for nord theme
 let g:nord_italic = 1
+
+" Syntax highlighting enabled
 syntax enable
 
 " Settings for vimwiki
