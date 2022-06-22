@@ -13,7 +13,7 @@ set path+=**
 " Display matching files when using tab
 set wildmenu
 
-" Set bar and block cursors on modes
+" Set bar and block cursors on diffrent modes
 let &t_SI = "\e[5 q"
 let &t_EI = "\e[2 q"
 
@@ -49,6 +49,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-markdown'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
+Plug 'masukomi/vim-markdown-folding'
 
 " Lightweight wiki for Vim
 Plug 'lervag/wiki.vim'
@@ -82,3 +83,15 @@ autocmd VimEnter * NERDTree | wincmd p
 
 colorscheme nord
 
+
+" Remaps
+
+" Remap splits navigation to just CTRL + hjkl
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+nnoremap <C-r> <C-w>r
+
+" Remap folding
+nnoremap f za
