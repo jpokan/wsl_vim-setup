@@ -20,9 +20,6 @@ let &t_EI = "\e[2 q"
 " Set autosave when editing different files
 set autowrite
 
-" Enable backup files
-set backup
-
 " Plugins will be downloaded under the specified directory.
 call plug#begin()
 
@@ -49,7 +46,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-markdown'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
-Plug 'masukomi/vim-markdown-folding'
+" Plug 'masukomi/vim-markdown-folding'
 
 " Lightweight wiki for Vim
 Plug 'lervag/wiki.vim'
@@ -71,7 +68,7 @@ let g:wiki_root = '~/notes'
 let g:wiki_filetypes = ['md']
 let g:wiki_link_extension = '.md'
 
-" Customize markdown link functionality for tpope/vim-markdown plugin
+" Short links for tpope/vim-markdown plugin
 autocmd Filetype markdown,liquid,text
 	\ syn region markdownLink matchgroup=markdownLinkDelimiter
 	\ start="(" end=")" keepend contained conceal contains=markdownUrl
@@ -85,13 +82,11 @@ colorscheme nord
 
 
 " Remaps
-
 " Remap splits navigation to just CTRL + hjkl
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
-nnoremap <C-r> <C-w>r
 
 " Remap folding
 nnoremap f za
