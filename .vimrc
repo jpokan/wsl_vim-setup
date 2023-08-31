@@ -3,6 +3,11 @@ set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set conceallevel=2
+" Displays correct vim encondings on for emojis (win11)
+set encoding=utf-8
+
+" Disable Vim Beep/GUI flashing (win11)
+set vb t_vb=
 
 " Display command that is being typed
 set showcmd
@@ -53,6 +58,9 @@ Plug 'lervag/wiki.vim'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
+
+" Show hidden files on NERDTree
+let NERDTreeShowHidden=1
 
 " Nord theme config
 let g:nord_bold_vertical_split_line = 1
