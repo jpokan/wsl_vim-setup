@@ -1,17 +1,18 @@
 ### Initial Setup
 
-This is my small guide to setup vim, run from the Windows Subsystem for Linux (WSL)
+A small guide to setup my dev environment with config files.
 
-System details:
+This setup was intended to be used and installed using Windows Subsystem for Linux (WSL). But it can be run similarly on windows or linux system directly with a few tweaks.
+
+System details requirements:
 
 - WSL Ubuntu 22.04
-- Windows 10
-- Windows Terminal Version: 1.13.11431.0
+- Windows 10/11
+- Windows Terminal Version: >= 1.13.11431.0
 
-What's nedded?
+What are we installing?
 - Starship terminal
-- Nvm
-- Node.js
+- Nvm & Node.js
 - Yarn
 - Vim-plug
 
